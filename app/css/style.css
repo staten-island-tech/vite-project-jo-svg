@@ -1,15 +1,5 @@
-html, body, *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 10px;
-}
+@import url(var.css);
 
-:root{
-  --primary: #2998ff;
-  --darkmode: 
-  --lightmode: 
-}
 body{
-  background-color: var(--primary);
+  background-color: var(--lightmode);
 }

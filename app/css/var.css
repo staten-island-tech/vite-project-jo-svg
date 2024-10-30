@@ -1,0 +1,22 @@
+html, body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+:root{
+    --darkmode: #181c1b;
+    --darkmode-secondary: #d4d9d1;
+    --darkmode-thirdary: #aa603a;
+    /* --nightime-toggle:  */
+/* __________________________________________ */
+    --jo: #fff5ed;
+    --jo-secondary: #7e7766;
+    --jo-thirdary: #4a372c;
+    /* --j-toggle:  */
+/* __________________________________________ */
+    --lightmode: #fffef7;
+    --light-secondary: #4b3f1b;
+    --light-thirdary: #212f1e;
+    /* --light-toggle:  */
+}
