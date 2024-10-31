@@ -12,34 +12,37 @@ import { popularSongs } from "./products";
 // toggle button for night, day, and sunset mayb
 
 
-const container = document.querySelector(".container");
+
 //gets the container from the index.html
 
-function create_cards(){
-    popularSongs.forEach(song => {
-        const card = document.createElement("div");
-        const title = document.createElement('h1');
-        const artist = document.createElement('h2');
-        const genre = document.createElement('h3');
-        const release = document.createElement('p');
-        const img = document.createElement('img');
-        card.classList.add('card');
-        title.textContent = song.title;
-        artist.textContent = `Artist: ${song.artist}`;
-        genre.textContent = `Genre: ${song.genre}`;
-        release.textContent = `Release Date: ${song.releaseDate}`;
-        img.src = song.imageUrl;
+document.addEventListener("DOMContentLoaded", ()=>{
+    for (n=0; n<=3; n++){
+        if (n<=3){
+            popularSongs.forEach(song=> {
+                const container = document.querySelector(".container");
+                const title = song.title;
+                const artist = song.artist; 
+                const genre = song.genre;
+                const release = song.releaseDate;
+                const img = song.imageUrl;
+                const des = song.altText
+                function createCard() {
+                    container.insertAdjacentHTML("beforeend",
+                        `<div class="card">
+                            <img src="${img}" alt="${des}">
+                            <h1>${title}</h1>
+                            <h2>${artist}</h2>
+                            <h3>${genre}</h3>
+                            <p>${release}</p>
+                        </div>`
+                    );
+                };
+                createCard();
+            })
+            
+            //make a function where the bot will make a section adn add 3 cards into it
+        }
+    }
+    
+})
 
-        //sends allat to the main
-        //for ts case it basically adds the elements to the card
-        card.appendChild(title);
-        card.appendChild(artist);
-        card.appendChild(genre);
-        card.appendChild(release);
-        // adds the card to the container
-        container.appendChild(card);
-    })
-}
-
-
-create_cards()
