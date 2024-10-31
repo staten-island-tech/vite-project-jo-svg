@@ -3,3 +3,12 @@
 body{
   background-color: var(--lightmode);
 }
+.container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.card{
+
+}

@@ -1,0 +1,19 @@
+@import url(var.css);
+
+.setting-btn {
+    margin: 1rem 1rem;
+    width: 4rem;
+    font-size: 40px;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+    border-radius: 50%;
+
+}
+.setting-btn a{
+    color: rgb(255, 255, 255);
+}
+
