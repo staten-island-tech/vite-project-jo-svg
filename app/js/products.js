@@ -1,183 +1,165 @@
 const popularSongs = [
-  {
-      title: "Blinding Lights",
-      artist: "The Weeknd",
-      genre: "Synthwave/Pop",
-      releaseDate: "2019-11-29",
+    {
+      title: "Dynamite",
+      artist: "BTS",
+      genre: "K-Pop",
+      releaseDate: "2020-08-21",
       imageUrl: "",
-      altText: "Cover image for Blinding Lights by The Weeknd"
-  },
-  {
-      title: "Levitating",
-      artist: "Dua Lipa",
-      genre: "Disco/Pop",
-      releaseDate: "2020-03-27",
+      altText: "Cover image for Dynamite by BTS"
+    },
+    {
+      title: "Lovesick Girls",
+      artist: "BLACKPINK",
+      genre: "K-Pop",
+      releaseDate: "2020-10-02",
       imageUrl: "",
-      altText: "Cover image for Levitating by Dua Lipa"
-  },
-  {
-      title: "Peaches",
-      artist: "Justin Bieber",
-      genre: "R&B/Pop",
-      releaseDate: "2021-03-19",
+      altText: "Cover image for Lovesick Girls by BLACKPINK"
+    },
+    {
+      title: "Blue & Grey",
+      artist: "BTS",
+      genre: "K-Pop",
+      releaseDate: "2020-11-20",
       imageUrl: "",
-      altText: "Cover image for Peaches by Justin Bieber"
-  },
-  {
-      title: "Good 4 U",
-      artist: "Olivia Rodrigo",
-      genre: "Pop Rock/Alternative",
-      releaseDate: "2021-05-14",
+      altText: "Cover image for Blue & Grey by BTS"
+    },
+    {
+      title: "Comethru",
+      artist: "Jeremy Zucker",
+      genre: "Jazz",
+      releaseDate: "2018-05-04",
       imageUrl: "",
-      altText: "Cover image for Good 4 U by Olivia Rodrigo"
-  },
-  {
-      title: "Save Your Tears",
-      artist: "The Weeknd",
-      genre: "Synthpop",
-      releaseDate: "2020-03-20",
+      altText: "Cover image for Comethru by Jeremy Zucker"
+    },
+    {
+      title: "Chạy Về Khóc Với Anh",
+      artist: "ERIK",
+      genre: "Viet Songs",
+      releaseDate: "2022-01-24",
       imageUrl: "",
-      altText: "Cover image for Save Your Tears by The Weeknd"
-  },
-  {
-      title: "Kiss Me More",
-      artist: "Doja Cat ft. SZA",
-      genre: "Pop/R&B",
-      releaseDate: "2021-04-09",
+      altText: "Cover image for Chạy Về Khóc Với Anh by ERIK"
+    },
+    {
+      title: "Maybe",
+      artist: "Suran ft. Hwasa",
+      genre: "KRnB",
+      releaseDate: "2018-03-02",
       imageUrl: "",
-      altText: "Cover image for Kiss Me More by Doja Cat ft. SZA"
-  },
-  {
-      title: "Montero (Call Me By Your Name)",
-      artist: "Lil Nas X",
-      genre: "Hip Hop/Pop",
-      releaseDate: "2021-03-26",
+      altText: "Cover image for Maybe by Suran ft. Hwasa"
+    },
+    {
+      title: "Stay With Me",
+      artist: "Chanyeol & Punch",
+      genre: "K-Pop",
+      releaseDate: "2016-11-30",
       imageUrl: "",
-      altText: "Cover image for Montero (Call Me By Your Name) by Lil Nas X"
-  },
-  {
-      title: "Stay",
-      artist: "The Kid LAROI & Justin Bieber",
-      genre: "Pop/Hip Hop",
-      releaseDate: "2021-07-09",
+      altText: "Cover image for Stay With Me by Chanyeol & Punch"
+    },
+    {
+      title: "Yellow Hearts",
+      artist: "Ant Saunders",
+      genre: "Jazz",
+      releaseDate: "2019-06-25",
       imageUrl: "",
-      altText: "Cover image for Stay by The Kid LAROI & Justin Bieber"
-  },
-  {
-      title: "drivers license",
-      artist: "Olivia Rodrigo",
-      genre: "Pop",
-      releaseDate: "2021-01-08",
+      altText: "Cover image for Yellow Hearts by Ant Saunders"
+    },
+    {
+      title: "Em Gì Ơi",
+      artist: "Jack & K-ICM",
+      genre: "Viet Songs",
+      releaseDate: "2019-10-05",
       imageUrl: "",
-      altText: "Cover image for drivers license by Olivia Rodrigo"
-  },
-  {
-      title: "Leave The Door Open",
-      artist: "Bruno Mars & Anderson .Paak",
-      genre: "R&B/Soul",
-      releaseDate: "2021-03-05",
+      altText: "Cover image for Em Gì Ơi by Jack & K-ICM"
+    },
+    {
+      title: "Wine",
+      artist: "SURAN ft. Changmo",
+      genre: "KRnB",
+      releaseDate: "2017-04-27",
       imageUrl: "",
-      altText: "Cover image for Leave The Door Open by Bruno Mars & Anderson .Paak"
-  },
-  {
-      title: "Heat Waves",
-      artist: "Glass Animals",
-      genre: "Indie Pop",
-      releaseDate: "2020-06-26",
+      altText: "Cover image for Wine by SURAN ft. Changmo"
+    },
+    {
+      title: "Palette",
+      artist: "IU ft. G-Dragon",
+      genre: "K-Pop",
+      releaseDate: "2017-04-21",
       imageUrl: "",
-      altText: "Cover image for Heat Waves by Glass Animals"
-  },
-  {
-      title: "Good Days",
-      artist: "SZA",
-      genre: "R&B",
-      releaseDate: "2020-12-25",
+      altText: "Cover image for Palette by IU ft. G-Dragon"
+    },
+    {
+      title: "Thiêu Thân",
+      artist: "Bray ft. Masew",
+      genre: "Viet Songs",
+      releaseDate: "2019-09-21",
       imageUrl: "",
-      altText: "Cover image for Good Days by SZA"
-  },
-  {
-      title: "Industry Baby",
-      artist: "Lil Nas X & Jack Harlow",
-      genre: "Hip Hop",
-      releaseDate: "2021-07-23",
+      altText: "Cover image for Thiêu Thân by Bray ft. Masew"
+    },
+    {
+      title: "Rollin'",
+      artist: "Brave Girls",
+      genre: "K-Pop",
+      releaseDate: "2017-03-07",
       imageUrl: "",
-      altText: "Cover image for Industry Baby by Lil Nas X & Jack Harlow"
-  },
-  {
-      title: "Watermelon Sugar",
-      artist: "Harry Styles",
-      genre: "Pop",
-      releaseDate: "2019-11-16",
+      altText: "Cover image for Rollin' by Brave Girls"
+    },
+    {
+      title: "Day 1",
+      artist: "HONNE",
+      genre: "Jazz",
+      releaseDate: "2018-08-24",
       imageUrl: "",
-      altText: "Cover image for Watermelon Sugar by Harry Styles"
-  },
-  {
-      title: "Blame It on Me",
-      artist: "George Ezra",
-      genre: "Pop",
-      releaseDate: "2018-03-23",
+      altText: "Cover image for Day 1 by HONNE"
+    },
+    {
+      title: "Chạm Đáy Nỗi Đau",
+      artist: "ERIK",
+      genre: "Viet Songs",
+      releaseDate: "2018-04-27",
       imageUrl: "",
-      altText: "Cover image for Blame It on Me by George Ezra"
-  },
-  {
-      title: "No Time To Die",
-      artist: "Billie Eilish",
-      genre: "Pop",
-      releaseDate: "2021-02-13",
+      altText: "Cover image for Chạm Đáy Nỗi Đau by ERIK"
+    },
+    {
+      title: "Instagram",
+      artist: "DEAN",
+      genre: "KRnB",
+      releaseDate: "2017-12-26",
       imageUrl: "",
-      altText: "Cover image for No Time To Die by Billie Eilish"
-  },
-  {
-      title: "Don't Start Now",
-      artist: "Dua Lipa",
-      genre: "Disco/Pop",
-      releaseDate: "2019-11-01",
+      altText: "Cover image for Instagram by DEAN"
+    },
+    {
+      title: "Dance Monkey",
+      artist: "Tones and I",
+      genre: "Jazz",
+      releaseDate: "2019-05-10",
       imageUrl: "",
-      altText: "Cover image for Don't Start Now by Dua Lipa"
-  },
-  {
-      title: "Positions",
-      artist: "Ariana Grande",
-      genre: "Pop/R&B",
-      releaseDate: "2020-10-30",
+      altText: "Cover image for Dance Monkey by Tones and I"
+    },
+    {
+      title: "Solo",
+      artist: "Jennie",
+      genre: "K-Pop",
+      releaseDate: "2018-11-12",
       imageUrl: "",
-      altText: "Cover image for Positions by Ariana Grande"
-  },
-  {
-      title: "Shivers",
-      artist: "Ed Sheeran",
-      genre: "Pop",
-      releaseDate: "2021-09-10",
+      altText: "Cover image for Solo by Jennie"
+    },
+    {
+      title: "Thằng Điên",
+      artist: "JustaTee ft. Phuong Ly",
+      genre: "Viet Songs",
+      releaseDate: "2018-10-16",
       imageUrl: "",
-      altText: "Cover image for Shivers by Ed Sheeran"
-  },
-  {
-      title: "Beggin'",
-      artist: "Madcon",
-      genre: "Pop/Rap",
-      releaseDate: "2007-06-01",
+      altText: "Cover image for Thằng Điên by JustaTee ft. Phuong Ly"
+    },
+    {
+      title: "Yêu 5",
+      artist: "Rhymastic",
+      genre: "Viet Songs",
+      releaseDate: "2017-09-22",
       imageUrl: "",
-      altText: "Cover image for Beggin' by Madcon"
-  },
-  {
-      title: "On The Ground",
-      artist: "Rosé",
-      genre: "Pop",
-      releaseDate: "2021-03-12",
-      imageUrl: "",
-      altText: "Cover image for On The Ground by Rosé"
-  },
-  {
-      title: "Astronaut In The Ocean",
-      artist: "Masked Wolf",
-      genre: "Hip Hop",
-      releaseDate: "2020-06-24",
-      imageUrl: "",
-      altText: "Cover image for Astronaut In The Ocean by Masked Wolf"
-  }
-];
-
-
-
-export {popularSongs};
+      altText: "Cover image for Yêu 5 by Rhymastic"
+    }
+  ];
+  
+export { popularSongs };
   
