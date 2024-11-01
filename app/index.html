@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
 
+    <link rel="stylesheet" href="/css/dropdown.css">
     <link rel="stylesheet" href="/css/mode.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
@@ -17,16 +18,16 @@
     </div>
 
     <div class="filtering">
-      <input type="text" placeholder="Select Option" class="select">
-      <ul>
-        <li>genre
-          <ul>
-            <li>K-Pop</li>
-            <li>KRnb</li>
-            <li>Viet Songs</li>
-            <li>Jazz</li>
-          </ul>
-        </li>
+      <div class="select">
+        <span class="selected">All</span>
+        <div class="caret"></div>
+      </div>
+      <ul class="menu-active">
+        <li class="active">All</li>
+        <li>K-Pop</li>
+        <li>KRnb</li>
+        <li>Viet Songs</li>
+        <li>Jazz</li>
       </ul>
     </div>
     <div class="container">
