@@ -1,31 +1,29 @@
+@import url(var.css);
 .filtering{
     position: relative;
     margin-top: 2.5rem;
     width: 30rem;
     justify-self: center;
 }
-
-
 .select {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: none;
-    padding-left: 10px;
-    padding-right: 20px;
+    padding: 1em;
     border-radius: 0.5em;
     background-color: #2a2f3b;
     color: #fff;
     width: 100%;
-    height: 2.5rem;
     font-size: 20px;
     transition: background 0.3s;
+    margin-bottom: 10px;
 }
 .select-clicked{
     box-shadow: 0 0 0.8em #26489a;
 }
 .select:hover{
-    background: #323741;
+    background: var(--filter-darkmode);
 }
 .caret{
     width: 0;
@@ -35,21 +33,27 @@
     border-top: 6px solid #fff;
     transition: 0.3s;
 }
-.menu-active{
+.caret-rotate{
+    transform: rotate(180reg);
+}
+.menu{
+    position: absolute;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: red;
     cursor: pointer;
-}
-.menu-active li{
-    padding: 6px 10px;
-    width: 100%;
-    background-color: blue;
     text-decoration: none;
     list-style: none;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+.menu li{
+    padding: 6px 10px;
+    width: 100%;
+    background-color: var(--filter-darkmode);
     font-size: 20px;
 }
-.menu-active li:hover{
+.menu li:hover{
     background-color: white;
 }
