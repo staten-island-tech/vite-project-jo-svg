@@ -1,9 +1,15 @@
 @import url(var.css);
+
 .filtering{
     position: relative;
     margin-top: 2.5rem;
     width: 30rem;
+    font-family: Helvetica, sans-serif;
     justify-self: center;
+}
+.select-clicked{
+    border: 2px #26489a solid; 
+    box-shadow: 0 0 0.8em #26489a;
 }
 .select {
     display: flex;
@@ -17,10 +23,6 @@
     width: 100%;
     font-size: 20px;
     transition: background 0.3s;
-    margin-bottom: 10px;
-}
-.select-clicked{
-    box-shadow: 0 0 0.8em #26489a;
 }
 .select:hover{
     background: var(--filter-darkmode);
@@ -47,13 +49,34 @@
     list-style: none;
     border-radius: 0.5em;
     overflow: hidden;
+    color: #9fa5b5;
+    background-color: var(--filter-darkmode);
+    top: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
 }
 .menu li{
-    padding: 6px 10px;
-    width: 100%;
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0.3em;
+    border-radius: 0.5em;
+    cursor: pointer;
     background-color: var(--filter-darkmode);
-    font-size: 20px;
+    font-size: 18px;
 }
 .menu li:hover{
-    background-color: white;
+    background-color: #2a2d35;
+}
+
+.active{
+    background: #23242a;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+
 }
