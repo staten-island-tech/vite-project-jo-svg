@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     })
 })
 
+/* const updateSongDisplay */
 //click toggle button 
 
 const setting = document.querySelector('.setting-btn');

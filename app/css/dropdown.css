@@ -36,7 +36,7 @@
     transition: 0.3s;
 }
 .caret-rotate{
-    transform: rotate(180reg);
+    transform: rotate(180deg);
 }
 .menu{
     position: absolute;
