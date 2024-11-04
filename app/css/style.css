@@ -17,3 +17,7 @@ body{
   margin-top: 3rem;
   height: 30rem;
 }
+
+.card-darkmode{
+  background-color: blue;
+}

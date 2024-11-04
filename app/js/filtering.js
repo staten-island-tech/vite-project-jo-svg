@@ -12,6 +12,8 @@ function updateActiveGenre(){
     }
 }
 
+//get the text 
+
 //imma get ts later br imma crash out if i contineu this 
 
-
+//remove all the cards and then filter it and then input the cards again wrd!!
