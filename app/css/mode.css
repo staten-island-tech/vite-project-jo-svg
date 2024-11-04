@@ -1,28 +1,30 @@
 @import url(var.css);
 
-.setting-btn, .setting-btn.-toggle{
-    margin: 1rem 1rem;
-    position: absolute;
-    width: 4rem;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 50px;
-    cursor: pointer;
-}
 .setting-btn{
-    height: 4rem;
-}
-.setting-btn.-toggle{
-    height: 14rem;
-}
-.setting-btn.-toggle ul, .setting-btn ul{
-    padding-top: 10px;
+    position: fixed;
+    column-gap: 10px;
+    width: fit-content;
+    margin: 0 2rem;
     display: flex;
-    flex-direction: column;
-    row-gap: 10%;
-    height: 100%;
-    font-size: 40px;
-    text-align: center;
 }
-.setting-btn.-toggle ul i, .setting-btn ul i{
-    color: rgb(255, 255, 255);
+.btn{
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background: greenyellow;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-drop{
+    font-size: 2rem;
+    height: 4rem;
+    list-style: none;
+    background: rgb(255, 255, 255);
+    width: 10rem;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
 }

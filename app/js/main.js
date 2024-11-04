@@ -32,22 +32,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
 /* const updateSongDisplay */
 //click toggle button 
 
-const setting = document.querySelector('.setting-btn');
-setting.addEventListener("click", ()=>{
-    const ul = document.querySelector('.ul-setting')
-    setting.classList.toggle('-toggle')
-    let icon = setting.querySelector('.bi-moon');
-    if (!icon) {
-       
-        icon = document.createElement('i');
-        icon.className = 'bi bi-moon';
-        // Insert the icon inside the setting button
-        ul.insertAdjacentElement('beforeend', icon);
-    } else {
-        // If the icon already exists, remove it on toggle off
-        icon.remove();
-    }
 
-    
-})
 

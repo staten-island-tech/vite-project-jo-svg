@@ -1,14 +1,17 @@
 import { popularSongs } from "./products";
 
-const activeElement = document.querySelector('.active');
-let activeGenre = ''; 
-//get wtv is in the list of the class that is active urp
 
-if (activeElement){
-    activeGenre = activeElement.innerText;
+let activeGenre = ''; 
+
+//get wtv is in the list of the class that is active urp
+function updateActiveGenre(){
+    const activeElement = document.querySelector('.active');
+    if (activeElement){
+        activeGenre = activeElement.textContent;
+        console.log(activeGenre);
+    }
 }
 
-const filteredSongs = popularSongs.filter(song => {
-    song.genre === activeGenre
-});
+//imma get ts later br imma crash out if i contineu this 
+
 
