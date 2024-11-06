@@ -4,7 +4,7 @@ const popularSongs = [
       artist: "BTS",
       genre: "K-Pop",
       releaseDate: "2020-08-21",
-      imageUrl: "",
+      imageUrl: "img/dynamite.png",
       altText: "Cover image for Dynamite by BTS"
     },
     {
@@ -12,7 +12,7 @@ const popularSongs = [
       artist: "BLACKPINK",
       genre: "K-Pop",
       releaseDate: "2020-10-02",
-      imageUrl: "",
+      imageUrl: "img/lovesick.png",
       altText: "Cover image for Lovesick Girls by BLACKPINK"
     },
     {
@@ -20,7 +20,7 @@ const popularSongs = [
       artist: "BTS",
       genre: "K-Pop",
       releaseDate: "2020-11-20",
-      imageUrl: "",
+      imageUrl: "img/bluengrey.png",
       altText: "Cover image for Blue & Grey by BTS"
     },
     {
@@ -28,7 +28,7 @@ const popularSongs = [
       artist: "Jeremy Zucker",
       genre: "Jazz",
       releaseDate: "2018-05-04",
-      imageUrl: "",
+      imageUrl: "img/comethru.png",
       altText: "Cover image for Comethru by Jeremy Zucker"
     },
     {
@@ -36,7 +36,7 @@ const popularSongs = [
       artist: "ERIK",
       genre: "Viet Songs",
       releaseDate: "2022-01-24",
-      imageUrl: "",
+      imageUrl: "img/chay.png",
       altText: "Cover image for Chạy Về Khóc Với Anh by ERIK"
     },
     {
