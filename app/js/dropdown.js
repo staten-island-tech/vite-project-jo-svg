@@ -1,3 +1,5 @@
+import {popularSongs} from "./products";
+import { createSongCards } from './create';
 function dropdownVariables(dropdown){
     const select = dropdown.querySelector('.select');
     const caret = dropdown.querySelector('.caret');
@@ -20,39 +22,51 @@ function closeDropdown(variables) {
 function optionSelection(option, variables) {
     variables.selected.innerText = option.innerText;
     closeDropdown(variables);
-    //calls the close dropdown function
+    //calls the close dropdown function after they click on smt
     variables.options.forEach(opt => opt.classList.remove('active'));
     option.classList.add('active');
     //this part removes 'active' from all the options
     //second part adds 'active' to wtv the user clicked on
-    updateActiveGenre();
+    update();
 }
 let activeGenre = ''; 
-function updateActiveGenre(){
+function update(){
+    console.clear();
     const activeElement = document.querySelector('.active');
     if (activeElement){
         activeGenre = activeElement.textContent;
         console.log(activeGenre);
+        filtering();
     }
 }
-function dropdown() {
+function filtering(){
+    document.querySelector('.container').innerHTML = '';
+    //empties the entire container
+    if(activeGenre !== 'All'){
+        const filteredSongs = popularSongs.filter(song => song.genre === activeGenre);
+        createSongCards(filteredSongs);    
+    }
+    //if they didnt click on all it will filter it
+    else if(activeGenre === 'All'){
+        createSongCards(popularSongs);
+    }
+    //if they click on all it will show all
+}
+
+function main() {
     const dropdowns = document.querySelectorAll('.filtering');
     dropdowns.forEach(dropdown => {
         const variables = dropdownVariables(dropdown);
         //you can also use document but dropdown is more specific 
         variables.select.addEventListener('click', () => toggleDropdown(variables));
 
-        // Event listeners for each option in the dropdown
+        //Event listeners for each option in the dropdown
         variables.options.forEach(option => {
             option.addEventListener('click', () => optionSelection(option, variables));
         });
     });
 }
-dropdown();
-
-
-
-
+main();
 
 
 

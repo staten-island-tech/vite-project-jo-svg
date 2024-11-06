@@ -1,21 +1,37 @@
 @import url(var.css);
 
-body{
-  background-color: var(--darkmode);
+.bodyThing-Lightmode{
+  background: var(--lightmode);
 }
+
 .container{
   display: flex;
   width: 90%;
   margin: 2rem auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+
 }
 .card{
   width: 30%;
   background-color: red;
   margin-top: 3rem;
   height: 30rem;
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+@media (max-width: 768px) {
+  .card {
+    width: 45%;  /* On smaller screens, use 45% width */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;  /* On very small screens, use full width */
+  }
 }
 
 .card-darkmode{

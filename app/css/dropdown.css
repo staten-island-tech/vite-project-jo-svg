@@ -1,7 +1,10 @@
 @import url(var.css);
 
+/* --------------------LIGHTMODE-------------------------- */
+
 .filtering{
     position: relative;
+    height: 3rem;
     margin-top: 2.5rem;
     width: 30rem;
     font-family: Helvetica, sans-serif;
@@ -12,6 +15,7 @@
     box-shadow: 0 0 0.8em #26489a;
 }
 .select {
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,4 +83,14 @@
     display: block;
     opacity: 1;
 
+}
+
+/* --------------------DARKMODE------------------------- */
+
+.select-dark{
+    background-color: red;
+}
+.menu-dark{
+    background-color: red;
+    columns: blue;
 }

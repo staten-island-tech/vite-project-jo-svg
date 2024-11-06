@@ -136,12 +136,12 @@ const popularSongs = [
       altText: "Cover image for Dance Monkey by Tones and I"
     },
     {
-      title: "Solo",
-      artist: "Jennie",
-      genre: "K-Pop",
-      releaseDate: "2018-11-12",
+      title: "Find a Way",
+      artist: "Musiq Soulchild",
+      genre: "KRnB",
+      releaseDate: "2003-03-11",
       imageUrl: "",
-      altText: "Cover image for Solo by Jennie"
+      altText: "Cover image for Find a Way by Musiq Soulchild"
     },
     {
       title: "Thằng Điên",
