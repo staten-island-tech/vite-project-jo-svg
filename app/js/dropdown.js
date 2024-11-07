@@ -53,13 +53,18 @@ function filtering(){
     //if they click on all it will show all
 }
 
+
+
+
+
+
+
 function main() {
     const dropdowns = document.querySelectorAll('.filtering');
     dropdowns.forEach(dropdown => {
         const variables = dropdownVariables(dropdown);
         //you can also use document but dropdown is more specific 
         variables.select.addEventListener('click', () => toggleDropdown(variables));
-
         //Event listeners for each option in the dropdown
         variables.options.forEach(option => {
             option.addEventListener('click', () => optionSelection(option, variables));
