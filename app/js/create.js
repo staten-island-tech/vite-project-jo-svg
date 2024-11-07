@@ -1,7 +1,7 @@
 function createSongCards(popularSongs){
     const container = document.querySelector(".container");
     popularSongs.forEach((song)=>{
-        const { title, artist, genre, releaseDate: release, imageUrl: img, altText: des } = song;
+        const { title, artist, genre, price, releaseDate: release, imageUrl: img, altText: des } = song;
         /* const title = song.title;
         const artist = song.artist; 
         const genre = song.genre;
@@ -16,6 +16,7 @@ function createSongCards(popularSongs){
                 <h2>${artist}</h2>
                 <h3>${genre}</h3>
                 <p>${release}</p>
+                <p class="price">Cost: ${price}</p>
             </div>`
         );
     });

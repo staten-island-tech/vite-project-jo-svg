@@ -19,7 +19,8 @@ img{
 }
 .card{
   width: 30%;
-  background-color: red;
+  background-color: var(--light-secondary);
+  color: var();
   margin-top: 3rem;
   border-radius: 30px;
   height: 40rem;
