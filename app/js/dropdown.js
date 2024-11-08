@@ -40,7 +40,7 @@ function update(){
     }
 }
 function filtering(){
-    document.querySelector('.container').innerHTML = '';
+    
     //empties the entire container
     if(activeGenre !== 'All'){
         const filteredSongs = popularSongs.filter(song => song.genre === activeGenre);

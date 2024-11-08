@@ -1,4 +1,5 @@
 function createSongCards(popularSongs){
+    document.querySelector('.container').innerHTML = '';
     const container = document.querySelector(".container");
     popularSongs.forEach((song)=>{
         const { title, artist, genre, price, releaseDate: release, imageUrl: img, altText: des } = song;

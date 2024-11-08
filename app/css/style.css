@@ -3,7 +3,9 @@
 .bodyThing-Lightmode{
   background: var(--lightmode);
 }
-
+.btnAlpha{
+  cursor: pointer;
+}
 .container{
   display: flex;
   width: 90%;
