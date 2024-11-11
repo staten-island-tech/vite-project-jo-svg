@@ -17,6 +17,7 @@ html, body, *{
 /* __________________________________________ */
     --lightmode: #fffef7;
     --light-secondary: #f5f4eb;
-    --light-thirdary: #212f1e;
+    --light-thirdary: #2a2f3b;
+    --light-tog: #26489a;
     /* --light-toggle:  */
 }

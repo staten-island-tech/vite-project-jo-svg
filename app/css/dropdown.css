@@ -9,6 +9,7 @@
     width: 30rem;
     font-family: Helvetica, sans-serif;
     justify-self: center;
+    cursor: pointer;
 }
 .select-clicked{
     border: 2px #26489a solid; 

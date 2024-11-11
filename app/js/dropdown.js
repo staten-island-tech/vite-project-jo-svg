@@ -39,24 +39,16 @@ function update(){
         filtering();
     }
 }
-function filtering(){
-    
-    //empties the entire container
-    if(activeGenre !== 'All'){
-        const filteredSongs = popularSongs.filter(song => song.genre === activeGenre);
-        createSongCards(filteredSongs);    
-    }
-    //if they didnt click on all it will filter it
-    else if(activeGenre === 'All'){
+function filtering() {
+    // Filter by active genre if it's not 'All'
+    if (activeGenre === 'All' || activeGenre === '') {
         createSongCards(popularSongs);
+    } else {
+        // Filter by the active genre
+        const filteredSongs = popularSongs.filter(song => song.genre === activeGenre);
+        createSongCards(filteredSongs);
     }
-    //if they click on all it will show all
 }
-
-
-
-
-
 
 
 function main() {
@@ -72,6 +64,19 @@ function main() {
     });
 }
 main();
+function sorting(){
+    const btn = document.querySelector('.btnAlpha');
+    btn.addEventListener('click', () => {
+        // sort the popularsongs array by title
+        popularSongs.sort((a, b) => {
+            if (a.title.toLowerCase() < b.title.toLowerCase()) return -1; //return -1 signals that it is an error 
+            if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
+            return 0;
+        });
+        filtering();
+    });  
+}
+sorting(); 
 
 
 

@@ -3,9 +3,7 @@
 .bodyThing-Lightmode{
   background: var(--lightmode);
 }
-.btnAlpha{
-  cursor: pointer;
-}
+
 .container{
   display: flex;
   width: 90%;
@@ -47,4 +45,16 @@ img{
 
 .card-darkmode{
   background-color: blue;
+}
+
+.btnAlpha{
+  cursor: pointer;
+  border-radius: 10px;
+  height: 3rem;
+  font-size: medium;
+  padding: 10px;
+  background-color: var(--light-thirdary);
+  color: #fff;
+  border: 2px solid var(--light-thirdary);
+  font-family: 'Courier New', Courier, monospace;
 }
