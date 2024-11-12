@@ -64,18 +64,20 @@ function main() {
     });
 }
 main();
-function sorting(){
+function sorting() {
     const btn = document.querySelector('.btnAlpha');
     btn.addEventListener('click', () => {
-        // sort the popularsongs array by title
+        // sort the popularSongs array by title
         popularSongs.sort((a, b) => {
-            if (a.title.toLowerCase() < b.title.toLowerCase()) return -1; //return -1 signals that it is an error 
+            if (a.title.toLowerCase() < b.title.toLowerCase()) return -1;
             if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
             return 0;
         });
-        filtering();
-    });  
+        filtering(); // Make sure the sorting is reflected in the filtering results
+    });
 }
+
+
 sorting(); 
 
 

@@ -4,19 +4,21 @@
     position: fixed;
     column-gap: 10px;
     width: fit-content;
-    margin: 0 2rem;
+    margin: 2rem;
     display: flex;
+    z-index: 2;
 }
 .btn{
     font-size: 2rem;
     width: 4rem;
     height: 4rem;
-    background: greenyellow;
+    background: var(--card);
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    
 }
 .btnDrop{
     font-size: 2rem;
@@ -36,7 +38,7 @@
     opacity: 1;
 }
 .on{
-    background-color: red;
+    background-color: var(--card);
     width: 3.5rem;
     height: 3.5rem;
     display: flex;

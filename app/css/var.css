@@ -6,18 +6,24 @@ html, body, *{
 :root{
     --darkmode: #181c1b;
     --darkmode-secondary: #d4d9d1;
-    --darkmode-thirdary: #aa603a;
+    --darkmode-thirdary: #464646;
     --filter-darkmode: #323741;
     /* --nightime-toggle:  */
-/* __________________________________________ */
-    --jo: #fff5ed;
-    --jo-secondary: #7e7766;
-    --jo-thirdary: #4a372c;
-    /* --j-toggle:  */
 /* __________________________________________ */
     --lightmode: #fffef7;
     --light-secondary: #f5f4eb;
     --light-thirdary: #2a2f3b;
     --light-tog: #26489a;
     /* --light-toggle:  */
+}
+
+.bodyThing{
+    --card: var(--light-secondary);
+    --bg: var(--lightmode);
+    --item: var(--light-thirdary);
+}
+.bodyThing2{
+    --card: var(--darkmode-secondary);
+    --bg: var(--darkmode);
+    --item: var(--light-thirdary);
 }

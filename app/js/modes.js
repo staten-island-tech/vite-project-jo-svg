@@ -1,53 +1,52 @@
-const buttonMode = document.querySelectorAll('.setting-btn');
-const card = document.querySelector('.card');
-const icons = document.querySelectorAll('.btnDrop li');
-const btnDrop = document.querySelector('.btnDrop');
-const on = document.querySelector('.on');
-const select = document.querySelector('.select');
 
-select.classList.add('select-light');
 
-buttonMode.forEach(btn =>{
-    
-    const btnIcon = btn.querySelector('.btn');
-    
-    if (btnIcon){
-        btnIcon.addEventListener('click', ()=>{
-            btnDrop.classList.toggle('btnDrop-clicked');
-        });
-    }
-    
-})
+document.addEventListener('DOMContentLoaded', () => {
+    const bg = document.querySelector('.bodyThing')
+    const buttonMode = document.querySelectorAll('.setting-btn');
+    const cards = document.querySelectorAll('.card'); 
+    const icons = document.querySelectorAll('.btnDrop li');
+    const btnDrop = document.querySelector('.btnDrop');
+    const select = document.querySelector('.select');
 
-function clearout(){
-    select.classList.remove('select-light', 'select-dark');
+    select.classList.add('select-light');
 
-}
-icons.forEach(icon => {
-    icon.addEventListener('click', ()=>{
-        icons.forEach(otherIcon => otherIcon.classList.remove('on'));
-        icon.classList.add('on');
-        console.log('Clicked icon:', icon);
-
-        const iconInner = icon.querySelector('i');
-        if (icon.classList.contains('on')){
-            clearout();
-            if (iconInner && iconInner.classList.contains("bi") && iconInner.classList.contains("bi-brightness-high")){
-                select.classList.add('select');
-                console.log('select-light added');
-            }
-            else if(iconInner && iconInner.classList.contains("bi") && iconInner.classList.contains("bi-moon")){
-                select.classList.add('select-dark');
-            }
-            else if(iconInner && iconInner.classList.contains("bi") && iconInner.classList.contains("bi-moon-stars")){
-
-            }
-            else{
-                select.classList.remove('select-light');
-                console.log('select-light removed');
-            } 
+    buttonMode.forEach(btn => {
+        const btnIcon = btn.querySelector('.btn');
+        if (btnIcon) {
+            btnIcon.addEventListener('click', () => {
+                btnDrop.classList.toggle('btnDrop-clicked');
+            });
         }
+    });
+
+    function clearout() {
         
-    })
+        bg.classList.remove('bodyThing-darkmode');
+        cards.forEach(card => card.classList.remove('card-darkmode'));
+    }
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', () => {
+            icons.forEach(otherIcon => otherIcon.classList.remove('on'));
+            icon.classList.add('on');
     
+            const iconInner = icon.querySelector('i');
+            clearout(); // Clear previous modes
+    
+            if (icon.classList.contains('on') && iconInner) {
+                if (iconInner.classList.contains("bi-brightness-high")) {
+                    // Light mode
+                    
+                    bg.classList.remove('bodyThing2');
+                    bg.classList.add('bodyThing');
+                    
+                } else if (iconInner.classList.contains("bi-moon")) {
+                    // Dark mode
+                    bg.classList.remove('bodyThing');
+                    bg.classList.add('bodyThing2');
+
+                }
+            }
+        });
+    });    
 });

@@ -1,7 +1,12 @@
 @import url(var.css);
 
-.bodyThing-Lightmode{
-  background: var(--lightmode);
+.bodyThing{
+  position: absolute;
+  background: var(--bg);
+}
+.bodyThing2{
+  position: absolute;
+  background: var(--bg);
 }
 
 .container{
@@ -19,8 +24,8 @@ img{
 }
 .card{
   width: 30%;
-  background-color: var(--light-secondary);
-  color: var();
+  background-color: var(--card);
+
   margin-top: 3rem;
   border-radius: 30px;
   height: 40rem;
@@ -43,18 +48,19 @@ img{
   }
 }
 
-.card-darkmode{
-  background-color: blue;
-}
+
 
 .btnAlpha{
   cursor: pointer;
-  border-radius: 10px;
-  height: 3rem;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
   font-size: medium;
   padding: 10px;
-  background-color: var(--light-thirdary);
-  color: #fff;
-  border: 2px solid var(--light-thirdary);
-  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--item);
+  color: #ffffff;
+  border: 2px solid var(--item);
+  position: fixed;
+  margin: 2rem;
+  
 }
